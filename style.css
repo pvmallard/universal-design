@@ -1,0 +1,18 @@
+h1, h2 {
+    text-align: center;
+}
+
+.nav {
+    display: flex;
+    padding: 30-px;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    border-color: purple;
+    background-color: lavender;
+}
+
+.flexy {
+    display: flex;
+    padding: 30-px;
+    justify-content: space-evenly;
+}
