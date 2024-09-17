@@ -4,7 +4,6 @@ h1, h2, h3 {
 
 .nav {
     display: flex;
-    padding: 30-px;
     flex-wrap: nowrap;
     justify-content: space-evenly;
     border-color: purple;
@@ -13,7 +12,17 @@ h1, h2, h3 {
 
 .flexy {
     display: flex;
-    padding: 30-px;
     flex-wrap: nowrap;
     justify-content: space-evenly;
+}
+
+.abox {
+    padding: 10px;
+    padding-top: 0px;
+
+}
+
+.box2 {
+    padding-left: 200px;
+    margin-right: 200px;
 }
