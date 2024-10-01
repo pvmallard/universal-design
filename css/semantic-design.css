@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
 /* colors: #D4D4D4, #ADC5CF, #AE7ABC, #813B93, #0C0A31 */
 
 body {
     background: #D4D4D4;
-    font-family: "Roboto", sans-serif;
+    font-family: "Mulish", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
@@ -12,6 +13,13 @@ body {
 .container {
     max-width: 960px;
     margin: 0 auto;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.flexy {
+    
 }
 
 p {
@@ -20,11 +28,12 @@ p {
 }
 
 h1, h2, h3 {
-    font-family: "Merriweather", serif;
+    font-family: "IM Fell English SC", serif;
 }
 
 h1 {
     font-size: 1.7em;
+    text-align: center;
 }
 
 h2 {
@@ -35,30 +44,35 @@ h3 {
     font-size: 1.2em;
 }
 
+a {
+    text-decoration: none;
+    color: #813B93;
+}
+
 nav ul li {
     list-style: none;
 }
 
 nav ul li a {
     text-decoration: none;
-    font-size: 1.8em;
+    font-size: 1.3em;
 }
 
 nav ul li a:link {
-    color: black;
+    color: #0C0A31;
 }
 
 nav ul li a:visited {
-    color: black;
+    color: #0C0A31;
 }
 
 nav ul li a:hover {
-    color: white;
-    background: black;
+    color: #D4D4D4;
+    background: #813B93;
 }
 
 nav ul li a:active {
-    color: yellow;
+    color: #AE7ABC;
 }
 
 .sr-only {
@@ -68,7 +82,7 @@ nav ul li a:active {
     margin: -1px;
     overflow: hidden;
     padding: 0;
-    position: aboslute;
+    position: absolute;
     white-space: nowrap;
     width: 1px;
 }
