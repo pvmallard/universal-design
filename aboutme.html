@@ -2,39 +2,50 @@
 <html>
     <head>
         <title>About Me</title>
-        <link rel="stylesheet" href="style.css">
-        <script src="script.js" defer></script>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/script.js" defer></script>
     </head>
     <body>
-        <h1 id="my-heading" alt="home page">Universal Design Portal</h1> 
-        <h2 id="itsame">Mallory Prescott</h2>
+        <div class="container">
+            <header>
+                <h1 id="my-heading" alt="home page">Universal Design Portal</h1> 
+                <h2 id="itsame">About Me Page</h2>
 
-        <div class="nav" alt="navigation bar">
-            <h3><a href="index.html" class="nav">Home</a></h3>
-            <h3><a href="aboutme.html" class="nav">About Me</a></h3>
-            <h3><a href="projects.html" class="nav">Projects</a></h3>
-        </div>
-
-        <h3>About Me</h3>
-        <div class="box2">
-            <div id="uno" class="abox">
-                <p alt="description">
-                    My name is Mallory Prescott, I'm a super senior who is currently double majoring in Computer Science and Creative Technology and Design.
-                    I'm really interested in what this class has to offer. I know very little about actively making a website more accessible, so I'm eager to learn and improve. 
-                </p>
-            </div>
-            <div id="dos" class="abox">
-                <p alt="description">
-                    I was raised in Colorado but not born here, though I still feel like a native. Sometimes so much that I forget I wasn't born here like my brothers. I've got two of them, brothers that is. One older and one younger, but each talented and brillant in their own way. Though it's my younger brother and I that inherited absurd allergies that make living more difficult than it needs to be.
-                    So contrary to most, free food is not a motivator for me since I can't eat. Still I love to cook, so that helps. Pastas, curries, and stews tend to be my favorite, although I do actually prefer to bake. My sweet tooth is nefarious.
-                </p>
-            </div>
-            <div id="tres" class="abox">
-                <p alt="description">
-                    Fun facts about me are I'm a vampire, missing some bones, and love ice cream. I love artists like Hozier, Chappell Roan, Mother Mother, and Tyler, The Creator, but boy does my music taste vary. I like to try to compose music.
-                    Mostly for games or game jams I participate it. I love to create, to code, to draw, and there is nothing more satisfying to me then something finally coming together. 
-                </p>
-            </div>
+                <nav class="nav" alt="navigation bar">
+                    <ul>
+                        <li><a href="index.html" class="nav">Home</a></li>
+                        <li><a href="aboutme.html" class="nav">About Me</a></li>
+                        <li><a href="projects.html" class="nav">Projects</a></li>
+                    </ul>
+                </na>
+            </header>
+            
+            <main class="main">
+                <h2 class="sr-only">About Me Information</h3>
+                <section class="box2">
+                    <section id="uno" class="abox">
+                        <h3 class="sr-only">Overview</h3>
+                        <p alt="description">
+                            My name is Mallory Prescott, I'm a super senior who is currently double majoring in Computer Science and Creative Technology and Design.
+                            I'm really interested in what this class has to offer. I know very little about actively making a website more accessible, so I'm eager to learn and improve. 
+                        </p>
+                    </section>
+                    <section id="dos" class="abox">
+                        <h3 class="sr-only">Background</h3>
+                        <p alt="description">
+                            I was raised in Colorado but not born here, though I still feel like a native. Sometimes so much that I forget I wasn't born here like my brothers. I've got two of them, brothers that is. One older and one younger, but each talented and brillant in their own way. Though it's my younger brother and I that inherited absurd allergies that make living more difficult than it needs to be.
+                            So contrary to most, free food is not a motivator for me since I can't eat. Still I love to cook, so that helps. Pastas, curries, and stews tend to be my favorite, although I do actually prefer to bake. My sweet tooth is nefarious.
+                        </p>
+                    </section>
+                    <div id="tres" class="abox">
+                        <h3 class="sr-only">Fun Facts</h3>
+                        <p alt="description">
+                            Fun facts about me are I'm a vampire, missing some bones, and love ice cream. I love artists like Hozier, Chappell Roan, Mother Mother, and Tyler, The Creator, but boy does my music taste vary. I like to try to compose music.
+                            Mostly for games or game jams I participate it. I love to create, to code, to draw, and there is nothing more satisfying to me then something finally coming together. 
+                        </p>
+                    </section>
+                </section>
+            </main>
         </div>
 
     </body>

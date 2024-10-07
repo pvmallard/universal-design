@@ -2,30 +2,46 @@
 <html>
     <head>
         <title>Universal Design Projects</title>
-        <link rel="stylesheet" href="style.css">
-        <script src="script.js" defer></script>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/script.js" defer></script>
     </head>
     <body>
-        <h1 id="my-heading" alt="home page">Universal Design Portal</h1> 
-        <h2 id="itsame">Mallory Prescott</h2>
+        <div class="container">
+            <header>
+                <h1 id="my-heading" alt="home page">Universal Design Portal</h1> 
+                <h2 id="itsame">Projects Page</h2>
 
-        <div class="nav" alt="navigation bar">
-            <h3><a href="index.html" class="nav">Home</a></h3>
-            <h3><a href="aboutme.html" class="nav">About Me</a></h3>
-            <h3><a href="projects.html" class="nav">Projects</a></h3>
+                <nav class="nav" alt="navigation bar">
+                    <ul>
+                        <li><a href="index.html" class="nav">Home</a></li>
+                        <li><a href="aboutme.html" class="nav">About Me</a></li>
+                        <li><a href="projects.html" class="nav">Projects</a></li>
+                    </ul>
+                </na>
+            </header>
+
+            <main class="main">
+                <section>
+                    <h2 id="content" class="sr-only">Project Links</h2>
+                    <h3>Here is where assignments will be</h3>
+                    <div class="flexy">
+                        <ul id="dos" class="abox">
+                            <li><a href="semantics-design.html" id="THElink">Wiki Design Project</a></li>
+                            <li><a href="#" id="THElink">Assignment 2</a></li>
+                        </ul>
+                        <ul id="tres" class="abox">
+                            <li><a href="#" id="THElink">Assignment 3</a></li>
+                            <li><a href="#" id="THElink">Assignment 4</a></li>
+                        </ul>
+                    </div>
+                </section>
+            </main>
+
+            <footer>
+                <p>designed by mal</p>
+                <address>mvprescott17@gmail.com</address>
+                <small>&copy; 2024</small>
+            </footer>
         </div>
-
-        <h3>Here is where assignments will be</h3>
-        <div class="flexy">
-            <div id="dos" class="abox">
-                <li><a href="#" id="THElink">Assignment 1</a></li>
-                <li><a href="#" id="THElink">Assignment 2</a></li>
-            </div>
-            <div id="tres" class="abox">
-                <li><a href="#" id="THElink">Assignment 3</a></li>
-                <li><a href="#" id="THElink">Assignment 4</a></li>
-            </div>
-        </div>
-
     </body>
 </html>

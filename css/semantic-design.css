@@ -2,9 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
 /* colors: #D4D4D4, #ADC5CF, #AE7ABC, #813B93, #0C0A31 */
+/* colors2: #EEF5F7, #E3820E, #D65D02, #C90904, #045399, #150915 */
 
 body {
-    background: #D4D4D4;
+    background: #EEF5F7;
     font-family: "Mulish", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -15,20 +16,59 @@ body {
     margin: 0 auto;
     
     display: flex;
-    flex-direction: column;
+    flex-flow: row wrap;
 }
 
-.flexy {
-    
+/* Medium screens */
+@media all and (min-width: 50px) {
+    .inrow { flex: 1 auto; }
+}
+  
+@media all and (min-width: 500px) {
+    .main { flex: 3 0px; }
+    .blurb { order: 1; }
+    .main    { order: 2; }
+    .info { order: 3; }
+    .footer  { order: 4; }
+}
+
+.header{
+    grid-area: header;
+}
+
+.blurb{
+    grid-area: blurb;
+}
+
+.info{
+    grid-area: info;
+    border-style: solid;
+    border-color: #045399;
+    padding: 10px;
+    text-align: center;
+}
+.info p{
+    size: 20px;
+    text-align: left;
+}
+
+.main{
+    grid-area: main;
+}
+
+footer{
+    grid-area: footer;
 }
 
 p {
     line-height: 1.5em;
     margin-bottom: 1.8em;
+    color: #150915;
 }
 
 h1, h2, h3 {
     font-family: "IM Fell English SC", serif;
+    color: #150915;
 }
 
 h1 {
@@ -46,7 +86,7 @@ h3 {
 
 a {
     text-decoration: none;
-    color: #813B93;
+    color: #045399;
 }
 
 nav ul li {
@@ -59,20 +99,20 @@ nav ul li a {
 }
 
 nav ul li a:link {
-    color: #0C0A31;
+    color: #150915;
 }
 
 nav ul li a:visited {
-    color: #0C0A31;
+    color: #150915;
 }
 
 nav ul li a:hover {
-    color: #D4D4D4;
-    background: #813B93;
+    color: #EEF5F7;
+    background: #E3820E;
 }
 
 nav ul li a:active {
-    color: #AE7ABC;
+    color: #045399;
 }
 
 .sr-only {
