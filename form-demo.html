@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Forms</title>
+    <link rel="stylesheet" href="css/forms.css">
+</head>
+<body>
+    <header><h1>Accessible Forms</h1></header>
+    <main>
+        <form id="myform" method="post">
+            <fieldset>
+                <legend>Give us your information!</legend>
+
+                <label for="username">
+                    what is your name?
+                    <input type="text" id="username" placeholder="first last" required>
+                </label>
+
+                <label for="your-email">
+                    what is your email?
+                    <input type="email" id="your-email" placeholder="email@something.com">
+                </label>
+
+                <label for="website">
+                    what is your website?
+                    <input type="url" id="website" placeholder="http://www.site.com">
+                </label>
+
+                <label for="phone">
+                    what is your phone number?
+                    <input type="tel" id="phone" minlength="10" placeholder="555-555-5555">
+                </label>
+
+                <label for="age">
+                    how old are you?
+                    <input type="number" id="age" maxlength="3" placeholder="35">
+                </label>
+
+                <label for="password">
+                    what is your favorite password?
+                    <input type="text" id="password" minlength="5" maxlength="20" required
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+!=]).*">
+                    <ul class="inputRequirements">
+                        <li>must be at least 5 characters and contain uppercase, lowercase, number, and symbol</li>
+                    </ul>
+                </label>
+
+                <input type="submit">
+
+            </fieldset>
+
+        </form>
+
+    </main>
+</body>
+</html>
