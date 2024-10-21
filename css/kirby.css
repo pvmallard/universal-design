@@ -19,35 +19,6 @@ body {
     flex-flow: row wrap;
 }
 
-/* Medium screens */
-@media all and (min-width: 50px) {
-    .inrow { flex: 1 auto; }
-}
-  
-@media all and (min-width: 500px) {
-    .main { flex: 3 0px; }
-    .blurb { order: 1; }
-    .main    { order: 2; }
-    .info { order: 3; }
-    .footer  { order: 4; }
-}
-
-.header{
-    grid-area: header;
-}
-
-.blurb{
-    grid-area: blurb;
-}
-
-.main{
-    grid-area: main;
-}
-
-footer{
-    grid-area: footer;
-}
-
 p {
     line-height: 1.5em;
     margin-bottom: 1.8em;
