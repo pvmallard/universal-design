@@ -88,7 +88,7 @@ nav ul li a:active {
     justify-content: space-between;
 }
 
-input{
+input, td{
     padding: 5px;
     font-family: "Gaegu", sans-serif;
     font-weight: 400;
