@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Coiny&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gaegu&display=swap');
+
+body {
+    background: #FFB6c1;
+    font-family: "Gaegu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: larger;
+    text-align: center;
+    justify-content: center;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    
+    display: flex;
+    flex-flow: row wrap;
+}
+
+/* Medium screens */
+@media all and (min-width: 50px) {
+    .inrow { flex: 1 auto; }
+}
+  
+@media all and (min-width: 500px) {
+    .main { flex: 3 0px; }
+    .blurb { order: 1; }
+    .main    { order: 2; }
+    .info { order: 3; }
+    .footer  { order: 4; }
+}
+
+.header{
+    grid-area: header;
+}
+
+.blurb{
+    grid-area: blurb;
+}
+
+.main{
+    grid-area: main;
+}
+
+footer{
+    grid-area: footer;
+}
+
+p {
+    line-height: 1.5em;
+    margin-bottom: 1.8em;
+    color: #150915;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Coiny", system-ui;
+    color: #150915;
+}
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.3em;
+}
+
+h4 {
+    font-size: 1.1em;
+}
+
+a {
+    text-decoration: none;
+    color: #cc4668;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline;
+    float: left
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.3em;
+    display: block;
+    padding: 16px;
+}
+
+nav ul li a:link {
+    color: #150915;
+}
+
+nav ul li a:visited {
+    color: #150915;
+}
+
+nav ul li a:hover {
+    color: #cc4668;
+    /* background: #E3820E; */
+}
+
+nav ul li a:active {
+    color: darkmagenta;
+}
+
+.flexy{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+input{
+    padding: 5px;
+    font-family: "Gaegu", sans-serif;
+    font-weight: 400;
+}
+
+.sr-only {
+    border: 0;
+    clip: rect(0,0,0,0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
