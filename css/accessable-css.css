@@ -81,7 +81,7 @@ nav{grid-area: navvy; background: #8C602A;}
 main{grid-area: mainy; background: #594336; max-height: 100%}
 #aside1{grid-area: aside1; background: #734D2C;}
 #aside2{grid-area: aside2; background: #734D2C;}
-footer{grid-area: footy; background: #D9B855;}
+footer{grid-area: footy;}
 
 nav ul {
     display: flex;
