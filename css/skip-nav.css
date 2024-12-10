@@ -7,11 +7,11 @@
   font-weight: 700;
   padding: 4px;
   position: absolute;
-  transform: translateY(-200%);
+  transform: translateY(-100%);
 }
 
 .skip-link:focus {
-  transform: translateY(-100%);
+  transform: translateY(-10%);
 }
 
 .skip-link {
